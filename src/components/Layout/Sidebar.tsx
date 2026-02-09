@@ -34,14 +34,14 @@ const Sidebar = memo(() => {
               <li key={item.path}>
                 <Link
                   to={item.path}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+                  className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 ${
                     isActive
-                      ? 'bg-nav-active text-white'
-                      : 'text-text-dark hover:bg-gray-50'
+                      ? 'bg-nav-active text-text-dark font-semibold shadow-sm'
+                      : 'text-text-dark hover:bg-gray-50 font-medium'
                   }`}
                 >
-                  <span className="text-xl">{item.icon}</span>
-                  <span className="font-medium">{item.label}</span>
+                  <span className={`text-xl ${isActive ? '' : 'opacity-60'}`}>{item.icon}</span>
+                  <span>{item.label}</span>
                 </Link>
               </li>
             );
