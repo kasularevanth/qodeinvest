@@ -20,7 +20,7 @@ interface EquityCurveProps {
   onReset: () => void;
 }
 
-const EquityCurve = memo(({ data, fromDate, toDate, onReset }: EquityCurveProps) => {
+const EquityCurve = memo(({ data, fromDate, toDate: _toDate, onReset }: EquityCurveProps) => {
   const chartData = useMemo(() => {
     return data.map((point) => ({
       date: point.date.getTime(),

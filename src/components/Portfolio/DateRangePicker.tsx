@@ -13,7 +13,7 @@ const DateRangePicker = memo(({
   dateRange,
   onFromDateChange,
   onToDateChange,
-  onReset,
+  onReset: _onReset,
 }: DateRangePickerProps) => {
   return (
     <div className="flex items-center gap-4 mb-4">

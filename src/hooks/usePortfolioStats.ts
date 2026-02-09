@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect } from "react";
 import { NAVDataPoint, ChartDataPoint, DateRange } from "../types";
-import { calculateDrawdown, prepareChartData } from "../utils/calculations";
+import { prepareChartData } from "../utils/calculations";
 import { parseDate } from "../utils/dateUtils";
 import { ExcelMetadata } from "../utils/excelParser";
 

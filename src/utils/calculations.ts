@@ -6,12 +6,11 @@ import {
   subYears,
   startOfYear,
   differenceInDays,
-  differenceInYears,
 } from "date-fns";
 
 export const calculateTrailingReturns = (
   data: NAVDataPoint[],
-  benchmarkData: NAVDataPoint[],
+  _benchmarkData: NAVDataPoint[],
   currentDate: Date = new Date(),
 ): { focused: TrailingReturns; nifty50: TrailingReturns } => {
   if (data.length === 0) {
